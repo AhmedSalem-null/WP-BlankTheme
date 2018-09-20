@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* 
+	The CSS3 Text-Shadow property contains the following values
+	horizontal-offset (length, required) | vertical-offset (length, required) | blur-radius (length, optional) | shadow-color (color, optional) 
+*/
+.shadow {	text-shadow:1px 1px 1px #666;}
+
+
+
+.rounded {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border:1px solid #ccc;
+}
+
+.rounded_top_right {
+	border-top-right-radius:5px;
+	-moz-border-radius-topright:5px;
+	-webkit-border-top-right-radius:5px;
+	border:1px solid #ccc;
+}
+
+.box_shadow {
+	-webkit-box-shadow: 2px 2px 3px #ccc;
+	-moz-box-shadow: 2px 2px 3px #ccc;
+	box-shadow: 2px 2px 3px #ccc;
+}
+
+.drop_box_shadow {
+	-webkit-box-shadow: 0 2px 2px #ccc;
+	-moz-box-shadow: 0 2px 2px #ccc;
+	box-shadow: 0 2px 2px #ccc;
+}
+
+.rotate {
+	-webkit-transform: rotate(-15deg);
+	-moz-transform: rotate(-15deg);
+}
+
+.gradient_vertical {
+	background-color: black;
+	background: -moz-linear-gradient(100% 100% 90deg, black, grey);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(grey), to(black));
+}
+.gradient_horizontal {
+	background-color: black;
+	background: -moz-linear-gradient(100% 100% 180deg, black, grey);
+	background: -webkit-gradient(linear, left top, right top, from(grey), to(black));
+}
